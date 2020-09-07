@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Universe_Says" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вселенная Говорит" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY2-bs-r7X">
+                                <rect key="frame" x="82.5" y="87" width="249.5" height="52"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxo-wb-cQW">
+                                <rect key="frame" x="20" y="200" width="374" height="403"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfx-ip-fMZ">
+                                        <rect key="frame" x="0.0" y="8" width="366" height="387"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAx-Dm-2y0">
+                                <rect key="frame" x="71" y="784" width="19" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="square.and.arrow.up" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCm-yQ-KOq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-KV-0xB">
+                                <rect key="frame" x="329" y="784" width="21" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="heart" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="likedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvK-qC-7lY"/>
+                                    <segue destination="79G-NO-qNV" kind="show" id="3HX-2b-emd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bxo-wb-cQW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="0U6-i2-C7F"/>
+                            <constraint firstItem="Bxo-wb-cQW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7yE-Qz-Ec3"/>
+                            <constraint firstItem="Bxo-wb-cQW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="DPA-cb-Y1A"/>
+                            <constraint firstItem="RY2-bs-r7X" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MWV-CC-44K"/>
+                            <constraint firstItem="aAx-Dm-2y0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="O9H-sC-xYl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9h1-KV-0xB" secondAttribute="trailing" constant="64" id="QWl-GQ-Izm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bxo-wb-cQW" secondAttribute="bottom" constant="259" id="W5V-c2-hca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RY2-bs-r7X" secondAttribute="bottom" constant="723" id="mHp-0u-mkP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aAx-Dm-2y0" secondAttribute="bottom" constant="56" id="mQK-r7-j5u"/>
+                            <constraint firstItem="RY2-bs-r7X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="p25-Sb-NhP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9h1-KV-0xB" secondAttribute="bottom" constant="56" id="rjU-ay-ikZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="forShadowsView" destination="Bxo-wb-cQW" id="w9Q-1j-45P"/>
+                        <outlet property="headerLabel" destination="RY2-bs-r7X" id="W7W-SP-gz6"/>
+                        <outlet property="titleLabel" destination="nfx-ip-fMZ" id="Upg-xM-nOW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="64.955357142857139"/>
+        </scene>
+        <!--LikeVC-->
+        <scene sceneID="h5r-nj-FJL">
+            <objects>
+                <viewController id="79G-NO-qNV" customClass="LikeVC" customModule="Universe_Says" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fxu-Fb-PN3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вселенная Говорит" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pem-f6-bdE">
+                                <rect key="frame" x="82.5" y="84" width="249.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frL-pF-Qoc">
+                                <rect key="frame" x="20" y="249" width="374" height="344"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Твоя любимая мотивация на сегодня:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tws-db-zcB">
+                                <rect key="frame" x="55" y="168" width="304" height="40"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="frL-pF-Qoc" firstAttribute="centerX" secondItem="tws-db-zcB" secondAttribute="centerX" id="6dX-NJ-dhy"/>
+                            <constraint firstItem="tws-db-zcB" firstAttribute="centerX" secondItem="hUV-SS-2Mc" secondAttribute="centerX" id="FoP-vg-VVX"/>
+                            <constraint firstItem="hUV-SS-2Mc" firstAttribute="bottom" secondItem="tws-db-zcB" secondAttribute="bottom" constant="600" id="Gic-OZ-SAW"/>
+                            <constraint firstItem="pem-f6-bdE" firstAttribute="centerX" secondItem="hUV-SS-2Mc" secondAttribute="centerX" id="NJ1-ef-y6q"/>
+                            <constraint firstItem="frL-pF-Qoc" firstAttribute="centerY" secondItem="fxu-Fb-PN3" secondAttribute="centerY" id="UOK-6k-jf3"/>
+                            <constraint firstItem="frL-pF-Qoc" firstAttribute="top" secondItem="tws-db-zcB" secondAttribute="bottom" constant="41" id="Y6c-fR-6wk"/>
+                            <constraint firstItem="frL-pF-Qoc" firstAttribute="leading" secondItem="fxu-Fb-PN3" secondAttribute="leadingMargin" id="b8C-jf-dmc"/>
+                            <constraint firstItem="tws-db-zcB" firstAttribute="leading" secondItem="hUV-SS-2Mc" secondAttribute="leading" constant="55" id="cbW-SJ-9Ph"/>
+                            <constraint firstItem="pem-f6-bdE" firstAttribute="top" secondItem="hUV-SS-2Mc" secondAttribute="top" constant="84" id="xmM-Op-1Ri"/>
+                            <constraint firstItem="tws-db-zcB" firstAttribute="top" secondItem="hUV-SS-2Mc" secondAttribute="top" constant="168" id="zpz-H7-88l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hUV-SS-2Mc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VMP-2u-1nH"/>
+                    <connections>
+                        <outlet property="label" destination="frL-pF-Qoc" id="ryH-se-ap7"/>
+                        <outlet property="secondStaticHeadLeabelLikeVC" destination="tws-db-zcB" id="3dg-Eu-0Ev"/>
+                        <outlet property="staticHeadLabelLikeVC" destination="pem-f6-bdE" id="8JX-Qs-rT3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P75-AK-eXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966.66666666666674" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
+</document>
